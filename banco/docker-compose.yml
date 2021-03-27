@@ -16,25 +16,6 @@ services:
       - "3308:3306"
     networks:
       - generation-network
-  blogpessoal-api:
-    restart: always
-    build: ./blogpessoal-api
-    working_dir: /blogpessoal-api
-    environment:
-      TZ: America/Sao_Paulo
-      SPRING_BOOT_ENVIRONMENT: Production
-    volumes:
-      - ./blogpessoal-api:/blogpessoal-api
-      - ~/.m2:/root/.m2
-    ports:
-      - "9000:8080"
-    command: mvn clean spring-boot:run
-    links:
-      - db
-    depends_on:
-      - db
-    networks:
-      - generation-network
 networks:
     generation-network:
         driver: bridge
