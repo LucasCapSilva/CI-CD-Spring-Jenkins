@@ -13,8 +13,6 @@ services:
     ports:
       - "9000:8080"
     command: mvn clean spring-boot:run
-    links:
-      - db
     networks:
       - generation-network
 networks:
