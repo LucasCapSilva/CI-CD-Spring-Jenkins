@@ -2,7 +2,9 @@ version: '3.3'
 services:
   blogpessoal-api:
     restart: always
-    build: ./blogpessoal-api
+    build:
+      context: .
+      dockerfile: Dockerfile
     working_dir: /blogpessoal-api
     environment:
       TZ: America/Sao_Paulo
