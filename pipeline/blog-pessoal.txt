@@ -2,24 +2,13 @@ node {
    def mvnHome
    stage('Clone') {
       checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SubmoduleOption', disableSubmodules: false, parentCredentials: true, recursiveSubmodules: true, reference: '', trackingSubmodules: true]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/LucasCapSilva/CI-CL-Spring-Jenkins.git']]])
-      mvnHome = tool 'm1'
    }
 
-   stage('Install server admin') {
-       dir('blogpessoal-api') {
-           sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean install -DskipTests "
-       }
-   }
-
+  
    stage('Build docker server admin') {
-       dir('blogpessoal-api') {
-          sh "docker build -t blog:v1 ."
+       dir('blog') {
+          sh "docker-compose up -d --build"
        }
    }
 
-    stage('Deploy') {
-      dir('blogpessoal-api') {
-         sh "docker stack deploy --compose-file docker-spring-admin.yml spring_admin  "
-      }
-    }
 }
