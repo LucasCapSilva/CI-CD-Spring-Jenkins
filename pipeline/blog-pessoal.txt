@@ -6,7 +6,7 @@ node {
    }
 
     stage('Deploy') {
-      dir('blogPessoalDeploy') {
+      dir('blog') {
          sh "docker-compose up -d --build"
       }
     }
