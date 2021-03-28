@@ -1,6 +1,3 @@
-FROM mysql:5.7.22
-EXPOSE 3308
-
 FROM openjdk:8-jre-alpine
 VOLUME /tmp
 ADD /target/blogPessoal-0.0.1-SNAPSHOT.jar app.jar
