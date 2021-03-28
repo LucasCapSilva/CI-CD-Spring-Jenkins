@@ -30,5 +30,5 @@ services:
       - udemy
 
 networks:
-  udemy:
-    external: true
+    udemy:
+        driver: bridge
