@@ -49,6 +49,10 @@ Copie o codigo do arquivo txt da pasta pipeline
 Cole em configuração pipeline
 ![alt text](https://i.imgur.com/GAVfL1A.png)
 
+configurando trigger
+
+![alt text](https://i.imgur.com/1DgRBtj.png)
+
 Clique em construir agora
 ![alt text](https://i.imgur.com/TT5x0FH.png)
 
