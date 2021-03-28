@@ -14,4 +14,17 @@ docker-compose -f docker-jenkins.yml up
 
 ## configurando jenkins
 
+abra o jenkins na porta:
+
+http://localhost:8080
+
+coloque o Unlock Jenkins
+
+![alt text](https://i.imgur.com/zzafKAt.png)
+
+instale os pacotes nescessarios 
+
+![alt text](https://i.imgur.com/rSuRMu5.png)
+
+
 
