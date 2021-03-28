@@ -21,7 +21,8 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8090:8090
+      - "9000:8080"
+    command: mvn clean spring-boot:run
     links:
       - db
     depends_on:
