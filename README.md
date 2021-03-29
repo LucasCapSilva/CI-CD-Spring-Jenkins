@@ -46,7 +46,7 @@ Instale maven
 ![alt text](https://i.imgur.com/JQa4Ekz.png)
 
 Copie o codigo do arquivo txt da pasta pipeline
-![alt text](https://i.imgur.com/wYyZ7eK.png)
+![alt text](https://i.imgur.com/r3a9uDr.png)
 
 Cole em configuração pipeline
 ![alt text](https://i.imgur.com/GAVfL1A.png)
