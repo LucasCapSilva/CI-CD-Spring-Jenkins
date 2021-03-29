@@ -1,4 +1,6 @@
-# CI-CL-Spring-Jenkins
+# CI-CD-Spring-Jenkins
+
+Integração continua com Jenkins em app Spring/Java
 
 ## Instalando jenkins via docker
 
@@ -55,6 +57,7 @@ configurando trigger
 
 Clique em construir agora
 ![alt text](https://i.imgur.com/TT5x0FH.png)
+
 
 
 
