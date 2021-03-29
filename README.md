@@ -6,7 +6,7 @@ Integração continua com Jenkins em app Spring/Java
 
 Entre na pasta docker
 
-![alt text](https://i.imgur.com/bypxe7K.png)
+![alt text](https://i.imgur.com/lYjgcZZ.png)
 
 Abra o terminal e digite os seguintes comandos
 
