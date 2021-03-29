@@ -1,4 +1,4 @@
-# CI-CL-Spring-Jenkins
+# CI-CD-Spring-Jenkins
 
 Integração continua com Jenkins em app Spring/Java
 
