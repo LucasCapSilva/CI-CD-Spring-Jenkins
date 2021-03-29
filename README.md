@@ -1,5 +1,7 @@
 # CI-CL-Spring-Jenkins
 
+Integração continua com Jenkins em app Spring/Java
+
 ## Instalando jenkins via docker
 
 Entre na pasta docker
